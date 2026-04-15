@@ -1,0 +1,100 @@
+{
+  "feature_columns": [
+    "age_years",
+    "sex",
+    "heart_rate_bpm",
+    "respiratory_rate_bpm",
+    "systolic_bp_mmHg",
+    "spo2_percent",
+    "temperature_c",
+    "level_of_consciousness",
+    "chief_complaint_category",
+    "duration_days",
+    "comorbidity_count",
+    "pain_distress_score_0_10"
+  ],
+  "numeric_columns": [
+    "age_years",
+    "heart_rate_bpm",
+    "respiratory_rate_bpm",
+    "systolic_bp_mmHg",
+    "spo2_percent",
+    "temperature_c",
+    "duration_days",
+    "comorbidity_count",
+    "pain_distress_score_0_10"
+  ],
+  "categorical_columns": [
+    "sex",
+    "level_of_consciousness",
+    "chief_complaint_category"
+  ],
+  "clinical_order": [
+    "Treat locally",
+    "Treat + monitor",
+    "Stabilize + refer",
+    "Emergency referral"
+  ],
+  "severity_order": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "clinical_map": {
+    "Treat locally": 0,
+    "Treat + monitor": 1,
+    "Stabilize + refer": 2,
+    "Emergency referral": 3
+  },
+  "severity_map": {
+    "Low": 0,
+    "Medium": 1,
+    "High": 2
+  },
+  "scaler_mean": [
+    52.22109375,
+    103.93935937500001,
+    22.6706875,
+    115.50087500000001,
+    92.94748437500002,
+    37.842703125,
+    3.3840625,
+    1.5046875,
+    5.03328125
+  ],
+  "scaler_scale": [
+    17.99168276742648,
+    24.252576523476833,
+    6.3771802763716625,
+    26.672110653909172,
+    4.550047381251195,
+    1.061369931086817,
+    2.5207877729181707,
+    1.3408171118179206,
+    2.5960881357146635
+  ],
+  "ohe_categories": {
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "level_of_consciousness": [
+      "Alert",
+      "Pain",
+      "Unresponsive",
+      "Voice"
+    ],
+    "chief_complaint_category": [
+      "Abdominal pain",
+      "Chest pain",
+      "Fever/Infection",
+      "Gastrointestinal",
+      "General weakness",
+      "Hypertensive symptoms",
+      "Neurologic",
+      "Respiratory",
+      "Trauma",
+      "Urinary"
+    ]
+  }
+}
