@@ -1,0 +1,111 @@
+{
+  "feature_columns": [
+    "age_months",
+    "weight_kg",
+    "fever_present",
+    "fever_duration_days",
+    "respiratory_rate_bpm",
+    "chest_indrawing",
+    "ability_to_drink_feed",
+    "vomiting_everything",
+    "convulsions",
+    "lethargic_or_unconscious",
+    "diarrhea_duration_days",
+    "dehydration_signs",
+    "spo2_percent",
+    "malnutrition_indicator"
+  ],
+  "numeric_columns": [
+    "age_months",
+    "weight_kg",
+    "fever_duration_days",
+    "respiratory_rate_bpm",
+    "diarrhea_duration_days",
+    "spo2_percent"
+  ],
+  "categorical_columns": [
+    "fever_present",
+    "chest_indrawing",
+    "ability_to_drink_feed",
+    "vomiting_everything",
+    "convulsions",
+    "lethargic_or_unconscious",
+    "dehydration_signs",
+    "malnutrition_indicator"
+  ],
+  "clinical_order": [
+    "Treat locally",
+    "Treat + monitor",
+    "Stabilize + refer",
+    "Emergency referral"
+  ],
+  "severity_order": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "clinical_map": {
+    "Treat locally": 0,
+    "Treat + monitor": 1,
+    "Stabilize + refer": 2,
+    "Emergency referral": 3
+  },
+  "severity_map": {
+    "Low": 0,
+    "Medium": 1,
+    "High": 2
+  },
+  "scaler_mean": [
+    18.87828125,
+    8.365187500000001,
+    1.85640625,
+    46.006265625,
+    3.10609375,
+    93.4815625
+  ],
+  "scaler_scale": [
+    12.654582798176257,
+    3.1997158998641977,
+    1.9365335228084581,
+    10.964892973916497,
+    2.708809769291845,
+    4.672933774257212
+  ],
+  "ohe_categories": {
+    "fever_present": [
+      "No",
+      "Yes"
+    ],
+    "chest_indrawing": [
+      "No",
+      "Yes"
+    ],
+    "ability_to_drink_feed": [
+      "Normal",
+      "Reduced",
+      "Unable"
+    ],
+    "vomiting_everything": [
+      "No",
+      "Yes"
+    ],
+    "convulsions": [
+      "No",
+      "Yes"
+    ],
+    "lethargic_or_unconscious": [
+      "No",
+      "Yes"
+    ],
+    "dehydration_signs": [
+      "Severe",
+      "Some",
+      "nan"
+    ],
+    "malnutrition_indicator": [
+      "Moderate",
+      "Severe",
+      "nan"
+    ]
+  }
+}

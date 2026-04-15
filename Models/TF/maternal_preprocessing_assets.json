@@ -1,0 +1,107 @@
+{
+  "feature_columns": [
+    "age_years",
+    "gestational_age_weeks",
+    "systolic_bp_mmHg",
+    "heart_rate_bpm",
+    "vaginal_bleeding",
+    "severe_headache_or_vision_issues",
+    "abdominal_pain_severity_0_10",
+    "fetal_movement",
+    "fever_present",
+    "seizures",
+    "previous_complications",
+    "hemoglobin_g_dL",
+    "edema",
+    "duration_days"
+  ],
+  "numeric_columns": [
+    "age_years",
+    "gestational_age_weeks",
+    "systolic_bp_mmHg",
+    "heart_rate_bpm",
+    "abdominal_pain_severity_0_10",
+    "hemoglobin_g_dL",
+    "duration_days"
+  ],
+  "categorical_columns": [
+    "vaginal_bleeding",
+    "severe_headache_or_vision_issues",
+    "fetal_movement",
+    "fever_present",
+    "seizures",
+    "previous_complications",
+    "edema"
+  ],
+  "clinical_order": [
+    "Treat locally",
+    "Treat + monitor",
+    "Stabilize + refer",
+    "Emergency referral"
+  ],
+  "severity_order": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "clinical_map": {
+    "Treat locally": 0,
+    "Treat + monitor": 1,
+    "Stabilize + refer": 2,
+    "Emergency referral": 3
+  },
+  "severity_map": {
+    "Low": 0,
+    "Medium": 1,
+    "High": 2
+  },
+  "scaler_mean": [
+    26.98,
+    26.92,
+    125.59209375,
+    102.99678124999998,
+    4.37171875,
+    9.357203125000002,
+    2.0221875
+  ],
+  "scaler_scale": [
+    5.886789235228318,
+    10.05805833647827,
+    28.166045438012965,
+    22.83234073391619,
+    2.762717216962032,
+    2.1603272298404783,
+    1.6898062654765338
+  ],
+  "ohe_categories": {
+    "vaginal_bleeding": [
+      "No",
+      "Yes"
+    ],
+    "severe_headache_or_vision_issues": [
+      "No",
+      "Yes"
+    ],
+    "fetal_movement": [
+      "Normal",
+      "Reduced"
+    ],
+    "fever_present": [
+      "No",
+      "Yes"
+    ],
+    "seizures": [
+      "No",
+      "Yes"
+    ],
+    "previous_complications": [
+      "No",
+      "Yes"
+    ],
+    "edema": [
+      "Generalized",
+      "Mild",
+      "nan"
+    ]
+  }
+}
